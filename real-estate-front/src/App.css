@@ -1,0 +1,13 @@
+:root{
+  --primary-color: #023047;
+  --secondary-color: #676767;
+  --tertiary-color: #2980b9;
+  --quaternary-color: #eee;
+  --penitentiary-color: #ffffff;
+}
+
+*{
+  background-color: var(--quantery-color);
+  margin: 0;
+  padding: 0;
+}

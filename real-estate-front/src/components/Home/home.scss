@@ -1,0 +1,43 @@
+.home {
+    position: relative;
+    height: calc(100vh - 80px);
+    background-image: url('../../assets/images/pri.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+
+    .home-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .home-container {
+        text-align: center;
+        color: var(--primary-color);
+        z-index: 1;
+
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+            span {
+                font-size: 80px;
+                color: var(--penitentiary-color);
+                -webkit-text-stroke: 2px var(--primary-color);
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .home{
+        .home-container{
+            background-size: contain;
+        }
+    }
+}

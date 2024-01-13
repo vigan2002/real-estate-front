@@ -1,0 +1,106 @@
+.property-detail {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quaternary-color);
+
+    .property-detail-wrapper {
+        display: flex;
+        padding: 100px 0 0 0;
+        width: 70%;
+
+        .property-detail-container {
+            width: 100%;
+
+            .property-card {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .card-images {
+                    width: 40%;
+
+                    img {
+                        width: 100%;
+                        border: 1px solid var(--primary-color);
+                        border-radius: 8px;
+                    }
+                }
+
+                .card-info {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 18px;
+                        color: var(--primary-color);
+
+                        span {
+                            color: var(--secondary-color);
+                        }
+                    }
+                    h3{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: var(--tertiary-color);
+                    }
+                    p{
+                        font-size: 14px;
+                        span{
+                            color: var(--primary-color);
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: #fff;
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s;
+        }
+
+        button:hover {
+            background-color: transparent;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+    }
+}
+@media (max-width: 768px) {
+    .property-detail{
+        width: 100%;
+        .property-detail-wrapper{
+            width: 90%;
+            .property-detail-container{
+                width: 100%;
+                .property-card{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .card-images{
+                        width: 100%;
+
+                    }
+                    .card-info{
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+}

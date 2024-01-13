@@ -1,0 +1,83 @@
+.property{
+    min-height: 100vh;
+    width: 100%;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--quaternary-color);
+    border-top: 1px solid var(--primary-color);
+    .property-wrapper{
+        padding: 100px 0 0 0 ;
+        width: 70%;    
+        h1{
+            color: var(--primary-color);
+            font-size: 36px;
+            font-weight: 500;
+        }
+        .property-container{
+            padding: 40px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .property-card{
+                width: 20%;
+                h2{
+                    font-size: 18px;
+                    color: var(--tertiary-color);
+                }
+                p{
+                    font-size: 16px;
+                    span{
+                        color: var(--primary-color);
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                img{
+                    width: 100%;
+                    border: 1px solid var(--primary-color);
+                    border-radius: 8px;
+                }
+
+            }
+            .show-more {
+                background-color: var(--primary-color);
+                color: #fff;
+                height: 50px;
+                width: 120px;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out, color 0.3s;
+              }
+              .show-more:hover {
+                background-color: transparent;
+                border: 1px solid var(--primary-color);
+                color: var(--primary-color);
+              }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .property{
+        width: 100%;
+        .property-wrapper{
+            width: 90%;
+            padding: 10px 0;
+            .property-container{
+                padding: 20px 0;
+                .property-card{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+                .show-more{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

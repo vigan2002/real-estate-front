@@ -1,0 +1,11 @@
+.error{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+    h1{
+        font-size: 20px;
+        color: var(--primary-color);
+    }
+}
